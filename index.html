@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>canvas</title>
+  </head>
+  <body style="background-color:white;">
+
+<div class="circle" id="circle-modes" onclick="toggleModesVisble();">
+  What MODES do data visualizers use to create data visualization?
+  <div id="modes">
+<iframe src='https://public.flourish.studio/visualisation/686417/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe><div style='width:100%!;margin-top:1px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/686417/?utm_source=embed&utm_campaign=visualisation/686417' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+  </div>
+</div>
+
+<div class="circle" id="circle-tools" onclick="toggleToolsVisble();">
+  What TOOLS do data visualizers use to create data visualization?
+  <div id="tools">
+<iframe src='https://public.flourish.studio/visualisation/688977/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe><div style='width:100%!;margin-top:1px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/688977/?utm_source=embed&utm_campaign=visualisation/688977' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+  </div>
+</div>
+
+<div class="circle" id="circle-medium" onclick="toggleMediumVisble();">
+  What MEDIUMS do data visualizers use to create data visualization?
+  <div id="medium">
+<iframe src='https://public.flourish.studio/visualisation/690192/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe><div style='width:100%!;margin-top:1px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/690192/?utm_source=embed&utm_campaign=visualisation/690192' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+  </div>
+</div>
+
+
+  </body>
+  <script>
+
+    var tools = document.getElementById("tools");
+    var modes = document.getElementById("modes");
+    var medium = document.getElementById("medium");
+
+    function toggleModesVisble() {
+        modes.style.display = "block";
+        tools.style.display = "none";
+        medium.style.display = "none";
+    };
+
+    function toggleToolsVisble() {
+        modes.style.display = "none";
+        tools.style.display = "block";
+        medium.style.display = "none";
+    };
+
+    function toggleMediumVisble() {
+        modes.style.display = "none";
+        tools.style.display = "none";
+        medium.style.display = "block";
+    };
+
+  </script>
+</html>
